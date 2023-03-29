@@ -1,0 +1,257 @@
+/*General*/
+
+body {
+  background-color: rgb(246, 246, 246);
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Nav bar*/
+nav{
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 8px 32px;
+  position: relative;
+  
+}
+
+.links{
+  font-weight: bolder;
+  color: rgb(16, 16, 16);
+  text-decoration: none;
+}
+
+.links:hover{
+  color: rgb(8, 211, 238);
+}
+
+/*Home*/
+
+.homeBody{
+height: 100%;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  justify-content: center;
+}
+
+
+.square {
+  display: inline-block;
+  margin: -2%;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  outline: 5px solid rgb(22, 22, 22);
+}
+
+.square:hover{
+  background-color: black;
+  border-radius: 15px;
+  outline: 5px solid rgb(246, 246, 246);
+}
+
+.title1{
+  font-size: 8vh;
+  text-align: center;
+  margin-bottom: 8vh;
+  font-weight: bolder;
+  color: rgb(9, 9, 9);
+}
+
+
+.Button{
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 15px 32px;
+  border-radius: 30px;
+  margin-left: 33%;
+}
+
+.Button:hover{
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+/*About*/
+
+.aboutBody{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutUs{
+  width: 50%;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.habout{
+  text-align: center;
+}
+
+.pabout{
+  font-size: 14px;
+  margin: 50px 25px;
+  padding: 20px 20px;
+  outline: 1px solid rgb(246, 246, 246); ;
+}
+
+.imageAbout{
+  width: 50%;
+  height: 604px;
+  background-image: url(https://cdn.wallpapersafari.com/26/30/xYerSc.jpg);
+}
+
+.projectsBody{
+  max-width: 100%;
+}
+
+.flexProjects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+
+.contentP{
+  text-align: center;
+  border: none;
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  padding: 40px 12px;
+  outline: solid 2px black;
+}
+
+.titleP{
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.textP{
+  font-size: 12px;
+}
+
+.contentP:hover{
+  color: white;
+  background-color: black;
+}
+
+/*Contact (Form)*/
+
+.contactBody{ 
+  border-radius: 18px;
+  width: 320px;
+  background: rgb(10, 10, 10);
+  padding: 20px;
+  margin: 2.1% auto 0;
+  text-align: center;
+}
+
+
+.box-input{ /*boxes*/
+  background: #ffffff;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px;
+  width: 100%;
+  color: #020202;
+  border-color: none;
+  font-weight: bolder;
+}
+
+.leginfo{
+  color: #ffffff;
+}
+
+.legloc{
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.inputText{
+  padding-bottom: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.submit-input{ /*submit button*/
+  background-color: #ffffff;
+  color: rgb(13, 13, 13);
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 23px 0 20px;
+  border: none;
+  outline: none;
+}
+
+.submit-input:hover{
+  color: white;
+  background-color: rgb(20, 20, 20);
+}
+
+
+
+
+/*PC responsive*/
+
+@media(min-width: 650px){
+  nav ul{
+margin-left: 33%;
+  }
+
+  .Button{
+    margin-left: 43%;
+  }
+
+  .pabout{
+    font-size: 18px;
+  }
+
+  .imageAbout{
+    width: 40%;
+    height: 604px;
+    background-image: url(https://cdn.wallpapersafari.com/26/30/xYerSc.jpg);
+    
+  }
+  .aboutUs{
+    width: 60%;
+  }
+
+  .flexProjects{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+  }
+}
